@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Views.Pages;
+using DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Views.UserControls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +25,20 @@ namespace DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3
         public MainWindow()
         {
             InitializeComponent();
-            
+
+            //khởi tạo UserControl Ribbon
+            UC_Ribbon uc_Ribbon = new UC_Ribbon(MainFrame);
+            Panel0.Children.Add(uc_Ribbon);
+            //load home page
+            MainFrame.Content = new HomePage();
         }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+
+        }
+
     }
+
 }
