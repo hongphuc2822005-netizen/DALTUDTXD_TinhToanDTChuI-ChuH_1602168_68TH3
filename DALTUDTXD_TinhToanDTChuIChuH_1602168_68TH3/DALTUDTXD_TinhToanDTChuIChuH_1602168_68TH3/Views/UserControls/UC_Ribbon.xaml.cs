@@ -23,6 +23,13 @@ namespace DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Views.UserControls
     {
         //khai báo biến 
         private Frame Mainframe;
+
+        // Thêm hàm khởi tạo không tham số để XAML nhận diện
+        public UC_Ribbon()
+        {
+            InitializeComponent();
+        }
+
         public UC_Ribbon(Frame mainFrame)
         {
             InitializeComponent();
@@ -31,7 +38,10 @@ namespace DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Views.UserControls
 
         private void rbt_2Dplan_Click(object sender, RoutedEventArgs e)
         {
-            Mainframe.Content = new Plan2DPage();
+            if (Mainframe != null)
+            {
+                Mainframe.Content = new Plan2DPage();
+            }
         }
 
         private void rbt_Beams_Click(object sender, RoutedEventArgs e)

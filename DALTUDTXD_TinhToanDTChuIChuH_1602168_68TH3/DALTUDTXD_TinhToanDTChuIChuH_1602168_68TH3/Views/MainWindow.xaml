@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3"
-        xmlns:UserControl="clr-namespace:DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Views.UserControls"
+        xmlns:uc="clr-namespace:DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Views.UserControls"
         mc:Ignorable="d"
         WindowState="Maximized"
         Title="MainWindow" Height="800" Width="800">
@@ -17,11 +17,14 @@
         </Grid.RowDefinitions>
 
         <!--Định nghĩa các control trong window-->
-        <StackPanel x:Name="Panel0" Grid.Row="0"/>
+        <StackPanel x:Name="Panel0" Grid.Row="0">
+           
+        </StackPanel>
         <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Visible" >
 
         </Frame>
-        
+        <uc:UC_Status Grid.Row="2"/>
+       
 
     </Grid>
 </Window>
