@@ -23,9 +23,9 @@
                        SmallImageSource="/Assets/Icons/Download from the Cloud.png">
                         <RibbonGallery>
                             <RibbonGalleryCategory>
-                                <RibbonGalleryItem Content="Kết cấu thép"/>
-                                <RibbonGalleryItem Content="Kết cấu bê tông"/>
-                                <RibbonGalleryItem Content="Kết cấu gỗ"/>
+                                <RibbonGalleryItem x:Name="ThepI" Content="Kết cấu thép chữ I"/>
+                                <RibbonGalleryItem x:Name="ThepH" Content="Kết cấu thép chữ H"/>
+                                
                             </RibbonGalleryCategory>
                         </RibbonGallery>
                     </RibbonComboBox>
